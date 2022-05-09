@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIEN TICH_CHU VI HINH TRON</title>
+    <style>
+        div {
+            margin: 20px;
+        }
+        button {
+            margin-top: 20px;
+        }
+        input {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <label>Nhap ban kinh duong tron: </label><br>
+    <input type="number" id="radius"><br>
+    <button id="dt" onclick="dientich()">Tinh Dien Tich</button>
+    <button id="cv" onclick="chuvi()">Tinh Chu Vi</button>
+</div>
+</body>
+<script>
+    function dientich() {
+        let r = document.getElementById("radius").value
+        let dt=r*r*Math.PI
+        alert("Dien tich hinh tron là: " + dt)
+    }
+
+    function chuvi() {
+        let r = document.getElementById("radius").value
+        let dt=2*r*Math.PI
+        alert("Chu vi hinh tron là: " + dt)
+    }
+</script>
+</html>

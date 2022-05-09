@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHUYEN DOI TIEN TE</title>
+    <style>
+        .header {
+            width: 130px;
+            text-align: left;
+        }
+
+        button {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="header" style="text-align: center">Amount</th>
+            <th class="header">From Currency</th>
+            <th class="header" colspan="2">To Currency</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="number" class="data"></td>
+            <td><select name="from" id="from" class="data">
+                <option value="23000">VND</option>
+                <option value="1">USD</option>
+                </select>
+            </td>
+            <td><select name="to" id="to" class="data">
+                <option value="1">USD</option>
+                <option value="23000">VND</option>
+                </select>
+            </td>
+            <td><button id="convert" onclick="chuyendoi()">Convert</button></td>
+        </tr>
+    </table>
+<p id="kq"></p>
+</body>
+<script src="BT2_CHUYENDOITIENTE.js"></script>
+</html>
